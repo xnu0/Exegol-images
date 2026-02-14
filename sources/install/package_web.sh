@@ -126,7 +126,6 @@ function install_ffuf() {
 function install_dirsearch() {
     # CODE-CHECK-WHITELIST=add-aliases
     colorecho "Installing dirsearch"
-    rm -rf /opt/tools/dirsearch
     git -C /opt/tools clone --depth 1 https://github.com/maurosoria/dirsearch
     cd /opt/tools/dirsearch || exit 1
     git fetch --unshallow || true
